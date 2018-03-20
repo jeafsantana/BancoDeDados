@@ -1,0 +1,240 @@
+%----------------------------------------------------------------------------------
+% Exemplo do uso da classe tcc.cls. Veja o arquivo .cls
+% para mais detalhes e instruções.
+%----------------------------------------------------------------------------------
+\chapter{\label{chap:intro}Introdução}
+% Comando para inserir siglas. Tanto as siglas quanto as
+% abreviaturas devem aparecer em ordem ALFABÉTICA nas listas
+% correspondentes. Como a classe no momento não é capaz de ordenar
+% as entradas automaticamente, existem duas alternativas:
+%
+%    a- Insira todas as siglas e abreviaturas no começo do texto,
+%    manualmente e em ordem alfabética.
+%
+%    b- Caso esteja em um ambiente UNIX (Linux, Mac ou Cygwin/similares),
+%    utilize o script sort.sh e o makefile que acompanham a
+%    classe. O makefile automaticamente compila a monografia para
+%    PDF (mas assume que o latex está acessível pela linha de
+%    comando). Neste caso a ordenação é feita de forma automática.
+%
+\sigla{abc}{Associação Brasileira de Computadores}
+\sigla{xyz}{lorem ipsum dolor sit}
+\sigla{ijk}{lorem ipsum dolor sit}
+%
+% Comando para inserir abreviaturas.
+%
+\abrev{Abrev}{Abreviatura}
+\abrev{Inform}{Informática}
+%
+% Comando para inserir símbolos. Estes irão aparecer em ordem
+% de ocorrência, já que o número da página está presente na lista
+% de símbolos.
+\simbolo{Hz}{Hertz}
+\simbolo{$\pi$}{Constante com valor aproximado de $3.1415926$}%
+%
+\section{Teoria dos Conjuntos}
+
+A teoria dos conjuntos é uma área da matemática. Ela tem por objetivo o estudo de conjuntos e todas as operações que são possíveis de realizar com os mesmos. Conjuntos são aglomerações de elementos que possuem alguma característica em comum, como pode ser visto no exemplo abaixo:\\
+
+\begin{exmp}
+$A = \{2, 4, 6, 8, 10\}$\par
+$B = \{5, 10, 15, 20, 25\}$\\
+\end{exmp}
+Onde o conjunto $A$ representa o conjunto dos 5 primeiros múltiplos de 2 e o conjunto $B$ representa os 5 primeiros múltiplos de 5. Porém, é possível ter outros conjuntos que não são relacionados somente com números. 
+
+\begin{exmp}
+$C = \{Paula, Gabriela, Ricardo, Frederico\}$\par
+$D = \{Gato, Cachorro, Rato\}$\par
+$E = \{Garfield, Marley, Perebas\} $\\
+	
+\end{exmp}
+
+Os conjuntos $C$, $D$ e $E$ relacionam outros tipos de elementos. O conjunto $C$ tem pessoas, o $D$ tem tipos de animais e o $E$ possui nome de animais.\par
+A teoria dos conjuntos também provê ferramentas para a execução de operações binárias com os conjuntos. Algumas das operações básicas dos conjuntos são: União, Diferença, Intersecção. 
+
+\begin{itemize}
+	\item União
+	
+	A União é a operação de juntar os elementos de dois conjuntos. É representada pelo símbolo $\cup$. Então, quando queremos unir dois conjuntos $A$ e $B$, escrevemos $A \cup B$.
+	Para exemplificar, o conjunto resultante de $A \cup B$ usando os elementos descritos anteriormente é:\\
+	\begin{exmp}
+		
+		$A \cup B = \{ 2, 4, 5, 6, 8, 10, 15, 20, 25\}$
+	\end{exmp} 
+	\newpage
+	
+	\item Intersecção
+	
+	A Intersecção é a operação de juntar os elementos em comum de dois conjuntos. É representada pelo símbolo $\cap$. Então, quando queremos tornar conhecido os elementos em comum de dois conjuntos $A$ e $B$, escrevemos $A \cap B$. Para exemplificar, o conjunto resultante de $A \cap B$ usando os elementos descritos anteriormente é:\\
+	
+	\begin{exmp}
+		$A \cap B = \{10\}$
+	\end{exmp}
+	\item Diferença
+	
+	A Diferença é a operação de diferenciar os elementos que estão contidos em um conjunto e que não estão contidos no outro. Então, quando queremos tornar conhecidos os elementos que estão contidos em $A$ e que não estão contidos em $B$, escrevemos $A - B$. Para exemplificar, o conjunto resultante de $A - B$ usando os elementos descritos anteriormente é:
+	
+	\begin{exmp}
+		$A - B = \{ 2, 4, 6, 8\}$
+	\end{exmp}
+		
+\end{itemize}
+
+Existem outras operações que podem ser feitas entre conjuntos, mas para fins de compreensão do contexto desse trabalho foram selecionadas somente essas três. Se o leitor tiver interesse de ir mais afundo na teoria dos conjuntos, leia a referência x.
+
+Como pudemos ver acima, existem várias operações possíveis de se realizar com conjuntos. Da mesma maneira, podemos representar os conjuntos de diferentes maneiras para facilitar a compreensão. As maneiras mais conhecidas são: Por extensão, por compreensão e por diagramas. 
+
+A representação de diagramas por extensão é a forma que estamos abordando até o dado momento, onde enumeramos os elementos do conjunto dentro de chaves. A representação por compreensão é onde dizemos que conteúdo aquele conjunto representa. E a representação por diagramas é a que será abordada mais afundo nesse trabalho.
+
+
+\section{Diagramas de Venn}
+
+Aulas sobre conjuntos se tornaram comuns em escolas nos dias de hoje. Diagramas de Venn proliferaram e, mesmo em escolas primárias, crianças podem ser vistas sorteando e classificando objetos por tamanho, cor e formato, e movendo esses objetos em espaços marcados no chão por linhas de giz ou aros de madeira. Crianças mais velhas aprendem que tais diagramas são nomeados a partir do lógico Inglês John Venn, e que através deles podemos representar as relações de pertencimento, inclusão e as operações de união, intersecção e complementar. Um retângulo é desenhado para representar o universo \textit{U}: subconjuntos de \textit{U} são representados pelo interior de círculos, ou outras curvas fechadas contidas em \textit{U} por exemplo, subespaços do retângulo. Os elementos de \textit{U} são representados por pontos dentro do retângulo, os elementos de um subconjunto \textit{A} por pontos dentro de seu correspondente subespaço do retângulo e os elementos de \textit{A'} por pontos dentro do retângulo mas fora da região que representa \textit{A}
+  \cite{baron1969note}.
+  
+  
+  
+
+Os diagramas de Venn são uma forma de representação gráfica de conjuntos comumente usados. Servem para facilitar a compreensão dos conjuntos e das operações realizadas nos mesmos.
+  
+
+\begin{figure}[htb]
+	\centering\includegraphics[width=.75\textwidth]{fig/exemplo1.eps}
+	\caption{\label{fig:fig2}This is another figure}
+\end{figure}
+- Descrever o problema \\
+O problema consiste em encontrar uma forma de desenhar o Diagrama de Venn de forma em que se torne todas as áreas do diagrama proporcionais umas as outras. 
+
+- Diagrama de Venn proporcional (exemplo,figura)\\
+Supondo um conjunto de informações referentes a três conjuntos, A, B e C:\\
+
+A = 10 elementos;\\
+B = 20 elementos;\\
+C = 30 elementos;\\
+
+
+A intersecção B = 5 elementos;\\
+
+A intersecção C = 3 elementos;\\
+\\
+
+
+Um diagrama de Venn comumente encontrado, que usam círculos, desenharia os espaços das intersecções que não foram mencionadas acima. A proposta do Diagrama de Venn convencional é realizar a representação gráfica dos conjuntos fornecidos acima para facilitar a compreensão, como pode ser visualizado na imagem que segue.
+
+O diagrama de Venn proporcional visa proporcionar a mesma representação gráfica, só que como o próprio nome diz, de forma proporcional. As informações que não foram explicitadas na especificação, não necessitam estar nesse diagrama, valorizando somente as informações que são relevantes para a compreensão do conjunto explicitado. 
+
+
+- Por que é interessante?\\
+  - É útil\\
+  - Não existe suporte\\
+Foram pesquisados trabalhos e softwares que abordavam os Diagramas de Venn, mas não foram encontrados outros tipos. Alguns tentavam implantar a ideia de tornar o diagrama proporcional, mas sem sucesso pois se tornava algo muito difícil ou a representação gráfica exibida era estranha. Junto com o orientador, observamos que um fator agravante para esse fato é que todos tentam usar círculos. Dificilmente são encontrados Diagramas de Venn que fogem dessa temática, tornando a proporcionalidade algo difícil de se alcançar. \\
+
+  - O que existe: só círculos (exemplos, figura)\\
+  - Quantos mais bolinhas, mais difícil\\
+  
+  O custo de processar cada 
+  
+  
+- O que existe?\\
+Atualmente existem softwares que implementam o diagrama de Venn sem levar em consideração a proporcionalidade. A grande maioria que utiliza círculos são softwares voltados para a educação de crianças do Ensino Fundamental, onde são apresentadas a Teoria dos Conjuntos (onde o Diagrama de Venn está inserido), e em várias outras áreas onde organização é necessária, onde os profissionais da área usam os Diagramas como suporte organizacional em suas palestras e apresentações. Até mesmo como uma abordagem sucinta de agregação de informações e dados. 
+- Nossa ideia: Algoritmo Evolutivo (base, como, mede)\\
+ - Dar Sugestão\\
+ - Exemplo + figura\\
+ 
+- Previsão de etapas\\
+- Conclusão\\
+- Bibliografia (o que existe, algoritmos evolutivos)  \\
+
+\subsection{Subseção}
+
+dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat sed diam
+voluptua at vero.
+
+lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+erat sed diam voluptua at vero eos et accusam et justo duo dolores
+et ea rebum stet clita kasd gubergren no sea takimata sanctus est
+lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur
+sadipscing elitr sed diam nonumy eirmod.
+
+tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at
+vero eos et accusam et justo duo dolores et ea rebum stet clita kasd
+gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum
+dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat sed diam voluptua
+at vero:
+
+\begin{itemize}
+   \item lorem
+   \item ipsum
+   \item dolor
+   \item sit
+   \item amet
+   \item consetetur
+\end{itemize}
+
+\subsubsection{Subsubsub}
+
+lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
+voluptua at vero eos et accusam et justo duo dolores et ea rebum
+stet clita.~\cite{GOLDENBERGAPL02}
+
+\begin{equation}\label{eq:apl}%
+    L\left(i,j,w,h\right)=
+    \begin{cases}
+      E\left(i,w,h\right) & i=j\\
+      \min\left(\min_{k=i}^{j-1}\left\{\heartsuit\left(i,k,j,w,h\right)\right\},
+                \min_{k=i}^{j-1}\left\{\spadesuit\left(i,k,j,w,h\right)\right\}\right) & i<j\text{.}
+    \end{cases}
+\end{equation}
+
+lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam
+voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita
+kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem
+ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at
+vero eos et accusam et justo duo dolores et ea rebum stet clita kasd
+gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum
+dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero
+eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no
+sea takimata sanctus est lorem ipsum dolor sit amet.
+
+%----------------------------------------------------------------------------------
+% Exemplo do ambiente para citações diretas com mais de 3 linhas.
+%
+% Para citações diretas de até 3 linhas, faça assim:
+% De acordo com Direto~(2011, p.~21): "bla bla bla, bla 'bla'."
+De acordo com Esquedo~(2011, p.~19):
+
+\begin{directcite}
+ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et
+iusto odio
+\end{directcite}
+
+duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+molestie consequat vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+delenit augue duis dolore te feugait nulla facilisi lorem ipsum dolor sit
+amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna aliquam erat volutpat.
+
+ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+feugait nulla facilisi.
+
+nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+doming id quod mazim placerat facer possim assum lorem ipsum dolor sit amet
+consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim veniam quis
+nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+commodo consequat.

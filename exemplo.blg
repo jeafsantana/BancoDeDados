@@ -1,0 +1,15 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: exemplo.aux
+The style file: tcc-num.bst
+A level-1 auxiliary file: exemplo-cap1.aux
+A level-1 auxiliary file: exemplo-cap2.aux
+Illegal, another \bibstyle command---line 18 of file exemplo.aux
+ : \bibstyle
+ :          {tcc-num}
+I'm skipping whatever remains of this command
+Database file #1: exemplo-bib.bib
+Warning--I didn't find a database entry for "GOLDENBERGAPL02"
+Warning--I didn't find a database entry for "PLASSPAG81"
+Warning--I didn't find a database entry for "WIKIPIC09"
+Warning--I didn't find a database entry for "XIAOAPL05"
+Warning--I didn't find a database entry for "COFFMANPACKING98"
+(There was 1 error message)
